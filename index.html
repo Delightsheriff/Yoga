@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Yoga</title>
+  </head>
+  <body>
+    <button class="sidebar-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <button id="dark-mode-toggle" class="dark-mode-toggle">
+      <svg
+        width="100%"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 496 496"
+      >
+        <path
+          fill="currentColor"
+          d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+          transform="translate(-8 -8)"
+        />
+      </svg>
+    </button>
+    <nav class="sidebar" id="test">
+      <div class="sidebar-header">
+        <img src="logo.svg" class="logo" alt="" />
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+      </div>
+      <!-- links -->
+      <ul class="links">
+        <li>
+          <a href="index.html">home</a>
+        </li>
+        <li>
+          <a href="#">about</a>
+        </li>
+        <li>
+          <a href="#">projects</a>
+        </li>
+        <li>
+          <a href="#">contact</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+  <script src="./JS/DarkMode.js"></script>
+  <script src="./JS/app.js"></script>
+</html>
