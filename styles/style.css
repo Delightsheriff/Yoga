@@ -541,21 +541,34 @@ footer .copyright-social .copyright {
 @media screen and (min-width: 800px) {
   #header {
     flex-direction: row;
-    /* align-items: flex-start; */
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: normal;
-    border: 1px solid rebeccapurple;
   }
   #header .head-info,
   #header .image {
-    border: 1px solid #000;
     text-align: left;
     width: 50%;
     padding: 1em;
   }
   #header .head-info h1 {
     font-size: 80px;
+  }
+
+  #influencers .content {
+    padding: 1em;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #influencers .content .content-image {
+    margin: 0;
+  }
+  .content-image,
+  .content-text {
+    flex: 1;
+  }
+  #influencers .content .content-text {
+    flex-direction: row;
   }
   footer {
     padding: 1em;
