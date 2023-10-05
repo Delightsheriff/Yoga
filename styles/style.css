@@ -531,31 +531,35 @@ footer .copyright-social .social-icons {
 footer .copyright-social .copyright {
   font-size: 1em;
 }
+
+/* RESPONSIVE DESIGN */
 @media screen and (min-width: 676px) {
   .sidebar {
     width: 400px;
   }
 }
 @media screen and (min-width: 800px) {
-  /* .sidebar-toggle {
-    display: none;
+  footer {
+    padding: 1em;
   }
-  .sidebar {
-    display: none;
-    position: relative;
+  footer .foot-info-cont {
     display: flex;
-    width: 100%;
+    justify-content: space-between;
   }
-  .links {
-    display: flex;
+  footer .foot-info-cont .foot-info {
+    padding: 1em;
   }
-  .close-btn {
-    display: none;
+  footer .copyright-social {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    margin-top: 3em;
   }
-  .show-sidebar {
-    transform: unset;
-  } */
-
+  footer .copyright-social .social-icons,
+  footer .copyright-social .copyright {
+    width: 30%;
+    margin: 0;
+  }
   #follow {
     grid-template-areas:
       "one text text two"
