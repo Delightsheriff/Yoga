@@ -380,6 +380,108 @@ img {
   background-color: transparent;
 }
 
+/* SECTION: FOLLOW */
+#follow {
+  display: grid;
+  text-align: center;
+  grid-template-areas:
+    "text text text text"
+    "one one two two"
+    "three three three three"
+    "four four four four";
+  margin: 4em;
+}
+
+#follow .follow-text {
+  grid-area: text;
+  font-size: 2rem;
+}
+
+#follow .follow-text a.btn {
+  font-size: 0.9375rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 5.5rem;
+  align-items: center;
+  font-weight: 500;
+  height: 5.5rem;
+  border-radius: 50%;
+}
+
+/* Here you can use the classes "One" "two" "three" "Four"  to style in case you have problems with the pseudo classes*/
+
+#follow .images:nth-of-type(2) {
+  grid-area: one;
+}
+#follow .images:nth-of-type(4) {
+  grid-area: three;
+}
+#follow .images:nth-of-type(3) {
+  grid-area: two;
+}
+#follow .images:last-child {
+  grid-area: four;
+}
+
+/* SECTION: NEWSLETTER */
+#newsletter {
+  background: var(--gradient-color);
+  border-radius: 20px;
+  padding: 2em;
+  text-align: center;
+  color: var(--white-color);
+}
+#newsletter .inner-text {
+  width: 80%;
+  margin: auto;
+}
+
+/* //////////////
+   FORM STYLING
+   ////////////// */
+
+.fieldInput {
+  display: flex;
+  margin: 20px auto;
+  width: 100%;
+  /* height: 35px; */
+  position: relative;
+  box-shadow: 0 4px 10px 0 rgba(255, 255, 255, 0.375);
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: var(--white-color);
+  padding: 0.3em 0;
+}
+.form-input {
+  /* width: 200px; */
+  background: var(--white-color);
+  border: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  color: var(--light-color);
+}
+.form-input:focus {
+  outline: none;
+}
+.form-submit {
+  font-size: 14px;
+  color: var(--light-color);
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.9em 1.3em;
+  /* width: 70px;
+  height: 35px; */
+  border-radius: 25px;
+  border: none;
+  background: var(--gradient-color);
+  /* box-shadow: 5px -2px 81px 1px rgba(0, 0, 0, 0.09); */
+  margin: 0.3em;
+  cursor: pointer;
+}
+
+/* ...............//////////////// */
+
 @media screen and (min-width: 676px) {
   .sidebar {
     width: 400px;
@@ -404,4 +506,44 @@ img {
   .show-sidebar {
     transform: unset;
   } */
+
+  #follow {
+    grid-template-areas:
+      "one text text two"
+      "one text text two"
+      "three three four four"
+      "three three four four";
+    gap: 1em;
+  }
+
+  #follow .images {
+    height: 15rem;
+  }
+  #follow .images img {
+    width: 100%;
+    height: 100%;
+  }
+  #follow .follow-text {
+    grid-area: text;
+    font-size: 3rem;
+  }
+
+  #follow .follow-text a.btn {
+    font-size: 1rem;
+  }
+
+  /* Here you can use the classes "One" "two" "three" "Four"  to style in case you have problems with the pseudo classes*/
+
+  #follow .images:nth-of-type(2) {
+    grid-area: one;
+  }
+  #follow .images:nth-of-type(4) {
+    grid-area: three;
+  }
+  #follow .images:nth-of-type(3) {
+    grid-area: two;
+  }
+  #follow .images:last-child {
+    grid-area: four;
+  }
 }
