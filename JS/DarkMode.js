@@ -3,6 +3,8 @@ let darkMode = localStorage.getItem("darkMode");
 
 const darkModeToggle = document.querySelector("#dark-mode-toggle");
 
+const darkModeIcon = document.getElementById("dark-mode-icon");
+
 const enableDarkMode = () => {
   // 1. Add the class to the body
   document.body.classList.add("darkmode");
@@ -34,5 +36,18 @@ darkModeToggle.addEventListener("click", () => {
     // if it has been enabled, turn it off
   } else {
     disableDarkMode();
+  }
+});
+
+/////
+darkModeToggle.addEventListener("click", () => {
+  // Toggle the dark mode class on the body element
+  document.body.classList.toggle("dark-mode");
+
+  // Change the image src depending on the dark mode state
+  if (document.body.classList.contains("dark-mode")) {
+    darkModeIcon.src = "./images/dark.svg";
+  } else {
+    darkModeIcon.src = "./images/light.svg";
   }
 });

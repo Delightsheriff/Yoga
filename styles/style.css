@@ -140,18 +140,13 @@ img {
   transform: translate(0);
 }
 .dark-mode-toggle {
-  position: absolute;
+  position: fixed;
   z-index: 100;
   top: 1em;
   right: 1em;
-  color: var(--foreground);
-  border: 2px solid currentColor;
-  padding: 4px;
-  background: transparent;
+  background: none;
+  border: none;
   cursor: pointer;
-  border-radius: 5px;
-  width: 30px;
-  height: 30px;
 }
 
 /* UTILITIES */
