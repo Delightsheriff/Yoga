@@ -270,6 +270,8 @@ img {
   position: absolute;
   bottom: 10%;
   left: 10%;
+  width: 100%;
+  /* object-fit: contain; */
 }
 
 #influencers .content .content-text {
@@ -561,14 +563,26 @@ footer .copyright-social .copyright {
     justify-content: space-between;
   }
   #influencers .content .content-image {
-    margin: 0;
+    justify-content: flex-start;
   }
-  .content-image,
+
+  .content-image {
+    width: 70%;
+  }
   .content-text {
-    flex: 1;
+    width: 30%;
   }
   #influencers .content .content-text {
     flex-direction: row;
+  }
+
+  #routines .routine {
+    flex-direction: row-reverse;
+  }
+  #routines .routine-text,
+  #routines .image {
+    /* flex: 1; */
+    width: 100%;
   }
   footer {
     padding: 1em;
