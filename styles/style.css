@@ -10,6 +10,7 @@
   --text-color-light: #a197b4;
   --sidebar-BG: rgba(255, 255, 255, 0.3);
   --first-color-light: #e5d9fd;
+  --first-color-dark: #1e0849;
   --white-color: #fff;
 }
 .darkmode {
@@ -430,9 +431,10 @@ img {
   padding: 2em;
   text-align: center;
   color: var(--white-color);
+  margin: 2em auto;
 }
 #newsletter .inner-text {
-  width: 80%;
+  width: 95%;
   margin: auto;
 }
 
@@ -479,8 +481,14 @@ img {
   margin: 0.3em;
   cursor: pointer;
 }
-
 /* ...............//////////////// */
+
+/* FOOTER */
+footer {
+  background-color: var(--first-color-dark);
+  color: var(--text-color-light);
+  padding: 2em 1.3em;
+}
 
 @media screen and (min-width: 676px) {
   .sidebar {
@@ -545,5 +553,11 @@ img {
   }
   #follow .images:last-child {
     grid-area: four;
+  }
+
+  /* Newsletter */
+  #newsletter .inner-text {
+    width: 80%;
+    margin: auto;
   }
 }
