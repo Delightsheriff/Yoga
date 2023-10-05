@@ -195,6 +195,7 @@ img {
 #header .head-info h1 {
   position: relative;
   line-height: 135%;
+  display: inline-block;
 }
 #header .head-info p {
   font-size: 15px;
@@ -220,7 +221,7 @@ img {
 }
 #header h1 .inner-image {
   width: 50px;
-  left: 8%;
+  left: -2px;
   bottom: 0;
 }
 #header p .inner-image {
