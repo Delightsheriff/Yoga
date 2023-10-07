@@ -612,6 +612,7 @@ footer .copyright-social .copyright {
       "three three four four"
       "three three four four";
     gap: 1em;
+    border: 1px solid #000;
   }
 
   #follow .images {
