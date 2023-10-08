@@ -18,6 +18,7 @@
   --body-color: #14092a;
   --title-color: #d1c0f1;
   --text-color: #a094b8;
+  --first-color-light: #1e0849;
   --text-color-light: #a197b4;
   --sidebar-BG: rgba(26, 26, 26, 0.3);
   --dark---container-color: #372a51;
@@ -581,10 +582,10 @@ footer .copyright-social .copyright {
   }
 
   .content-image {
-    width: 70%;
+    width: 50%;
   }
   .content-text {
-    width: 30%;
+    width: 50%;
   }
   #influencers .content .content-text {
     flex-direction: row;
