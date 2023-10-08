@@ -11,7 +11,8 @@
   --sidebar-BG: rgba(255, 255, 255, 0.3);
   --first-color-light: #e5d9fd;
   --first-color-dark: #1e0849;
-  --white-color: #fff;
+  --dark---container-color: #fff;
+  --utility-color: #000;
 }
 .darkmode {
   --body-color: #14092a;
@@ -20,6 +21,7 @@
   --text-color-light: #a197b4;
   --sidebar-BG: rgba(26, 26, 26, 0.3);
   --dark---container-color: #372a51;
+  --utility-color: #fff;
 }
 /* Global Settings */
 *,
@@ -62,7 +64,7 @@ img {
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
-  color: var(--clr-primary-5);
+  color: var(--utility-color);
   transition: var(--transition);
   cursor: pointer;
   animation: bounce 2s ease-in-out infinite;
@@ -185,7 +187,7 @@ img {
 #header .head-info {
   font-size: 2rem;
   text-align: center;
-  position: relative;
+  color: var(--title-color);
 }
 #header .head-info h1 {
   position: relative;
@@ -308,6 +310,7 @@ img {
   margin: 1em 0 1em 0;
 }
 #routines .routine .routine-text {
+  color: var(--title-color);
   margin-bottom: 1rem;
 }
 
@@ -330,7 +333,7 @@ img {
 
   align-items: center;
   padding: 0.5em 0.8em;
-  background-color: var(--white-color);
+  background-color: var(--dark---container-color);
   border-radius: 20px;
   position: absolute;
   z-index: 2;
@@ -345,8 +348,8 @@ img {
 }
 #routines .routine .heart-rate .imgs {
   background-color: rgb(239, 226, 216);
-  width: 36px;
-  height: 36px;
+  width: 20%;
+  height: 20%;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -357,16 +360,20 @@ img {
 }
 
 #routines .routine:nth-child(2) .routine-text {
-  margin: 1em 0 5em 0;
+  margin: 1em auto 5em auto;
 }
 #routines .routine:nth-child(2) .image > img:nth-of-type(1) {
   position: absolute;
+  width: 70%;
   top: -90px;
-  left: -80px;
+  left: -40px;
+}
+#routines .routine:nth-child(2) .image > img:nth-of-type(2) {
+  width: 70%;
 }
 #routines .routine:nth-child(2) .image .heart-rate:nth-of-type(1) {
   width: max-content;
-  left: 60px;
+  left: 90px;
   top: -60px;
 }
 #routines .routine:nth-child(2) .image .heart-rate:nth-of-type(2) {
@@ -396,6 +403,7 @@ img {
 #follow .follow-text {
   grid-area: text;
   font-size: 2rem;
+  color: var(--title-color);
 }
 
 #follow .follow-text a.btn {
@@ -465,7 +473,7 @@ img {
 .form-input {
   width: 100%;
 
-  background: var(--white-color);
+  background: var(--dark---container-color);
   border: none;
   padding: 19px 20px;
   border-radius: 40px;
@@ -554,7 +562,13 @@ footer .copyright-social .copyright {
     padding: 1em;
   }
   #header .head-info h1 {
-    font-size: 80px;
+    font-size: 64px;
+  }
+  #header h1 .inner-image {
+    bottom: 60px;
+    left: 100%;
+    width: 80px;
+    /* display: none; */
   }
 
   #influencers .content {
@@ -584,6 +598,16 @@ footer .copyright-social .copyright {
     /* flex: 1; */
     width: 100%;
   }
+
+  #routines .routine:nth-child(2) .image > img:nth-of-type(1) {
+    position: absolute;
+    width: 70%;
+    top: -100px;
+    left: -10px;
+  }
+  #routines .routine:nth-child(2) .image > img:nth-of-type(2) {
+    width: 70%;
+  }
   footer {
     padding: 1em;
   }
@@ -612,7 +636,6 @@ footer .copyright-social .copyright {
       "three three four four"
       "three three four four";
     gap: 1em;
-    border: 1px solid #000;
   }
 
   #follow .images {
