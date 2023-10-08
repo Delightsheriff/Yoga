@@ -180,7 +180,6 @@ img {
 #header {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   margin: 3.5em auto auto auto;
 }
@@ -203,7 +202,6 @@ img {
 #header .head-info a {
   font-size: 15px;
   position: relative;
-  /* padding: 1em 0 2em 0; */
 }
 .styled-text {
   display: inline-block;
@@ -261,9 +259,7 @@ img {
 }
 
 #influencers .content .content-image .img-cont {
-  /* display: inline-block; */
   background-color: var(--first-color-light);
-  /* padding: 0 2em; */
   position: relative;
   border-radius: 104px;
   width: 230px;
@@ -274,7 +270,6 @@ img {
   bottom: 10%;
   left: 10%;
   width: 100%;
-  /* object-fit: contain; */
 }
 
 #influencers .content .content-text {
@@ -295,7 +290,6 @@ img {
 #influencers .content .content-text p {
   background: url(../images/liststar-2-bg.svg) no-repeat 0% -4px / contain;
   padding: 3.5em 0 0 0;
-  /* color: var(--text-color); */
 }
 #influencers .content .content-text a {
   font-size: 16px;
@@ -452,8 +446,8 @@ img {
   font-weight: 500;
   margin: 0.8rem 0;
 }
-
-/* //////////////
+/* 
+//////////////
    FORM STYLING
    ////////////// */
 .field {
@@ -464,11 +458,9 @@ img {
 .fieldInput {
   margin: 20px auto;
   width: 100%;
-  /* height: 35px; */
   position: relative;
   border-radius: 30px;
-  /* overflow: hidden; */
-  /* background-color: var(--white-color); */
+
   padding: 0.3em 0;
 }
 .form-input {
@@ -488,9 +480,7 @@ img {
   display: block;
   font-size: 14px;
   color: var(--light-color);
-  /* position: absolute;
-  right: 0;
-  top: 30px; */
+
   padding: 1.5em 1.3em;
   box-shadow: 0 4px 10px 0 rgba(94, 49, 88, 0.641);
 
@@ -498,7 +488,6 @@ img {
   border: none;
   background: var(--gradient-color);
 
-  /* margin: 0.3em; */
   cursor: pointer;
 }
 /* ...............//////////////// */
@@ -569,7 +558,6 @@ footer .copyright-social .copyright {
     bottom: 60px;
     left: 100%;
     width: 80px;
-    /* display: none; */
   }
 
   #influencers .content {
@@ -596,7 +584,6 @@ footer .copyright-social .copyright {
   }
   #routines .routine-text,
   #routines .image {
-    /* flex: 1; */
     width: 100%;
   }
 
